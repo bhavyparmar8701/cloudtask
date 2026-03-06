@@ -1,103 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Indian Culture after change</title>
+<title>My CI/CD Website</title>
 
 <style>
 body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#000;
-  color:white;
+    font-family: Arial;
+    background-color:#f2f2f2;
+    text-align:center;
+    padding:50px;
 }
 
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px;
-  background:#111;
+.container{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+    width:400px;
+    margin:auto;
 }
 
-nav img{
-  width:60px;
+h1{
+    color:#2c3e50;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 10px;
+p{
+    color:#555;
 }
 
-nav input{
-  padding:5px;
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
 }
 
-video{
-  width:100%;
-}
-
-.main{
-  text-align:center;
-}
-
-.page1{
-  padding:60px 20px;
-}
-
-.page2{
-  padding:40px;
-}
-
-.about{
-  max-width:800px;
-  margin:auto;
-}
-
-.boxes{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-  padding:30px;
-}
-
-.box_in{
-  width:200px;
-  height:120px;
-  background:#222;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:10px;
-}
-
-.page6{
-  padding:40px;
-}
-
-.contain{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-}
-
-.cit{
-  width:200px;
-  height:120px;
-  background:#333;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:10px;
-}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#111;
+button:hover{
+    background:#2980b9;
 }
 </style>
 
@@ -105,59 +47,12 @@ footer{
 
 <body>
 
-<nav>
-<img src="./LOGO.png">
+<div class="container">
+<h1>Welcome</h1>
+<p>This website is deployed using GitHub CI/CD Pipeline.</p>
+<p>Build artifacts are stored using GitHub Actions.</p>
 
-<a href="http://ec2-13-203-158-133.ap-south-1.compute.amazonaws.com/">junagadh</a>
-<a href="http://ec2-65-2-63-209.ap-south-1.compute.amazonaws.com/">jambagar</a>
-<a href="http://ec2-13-233-156-196.ap-south-1.compute.amazonaws.com/">somnath</a>
-
-<input type="text" placeholder="Search here">
-</nav>
-
-<video autoplay loop muted src="./v1.mp4"></video>
-
-<div class="main">
-
-<div class="page1">
-<h1>gujarat Culture</h1>
-<p>India has unique culture and traditions which makes it different from the rest of the world.</p>
-</div>
-
-<div class="page2">
-<div class="about">
-<h1>About</h1>
-<p>gujarat culture is a combination of many traditions, religions, languages and customs that developed over thousands of years.</p>
-</div>
-</div>
-
-<div class="page3">
-<h1>Where science meets the sacred</h1>
-
-<div class="boxes">
-<div class="box_in"><h3>Modhera Sun Temple</h3></div>
-<div class="box_in"><h3>gir forest</h3></div>
-<div class="box_in"><h3>somnath mandir</h3></div>
-<div class="box_in"><h3>Red Fort</h3></div>
-</div>
-
-</div>
-
-<div class="page6">
-<h1>The Great Indian Cities</h1>
-
-<div class="contain">
-<div class="cit"><h3>Delhi</h3></div>
-<div class="cit"><h3>Mumbai</h3></div>
-<div class="cit"><h3>Bangalore</h3></div>
-</div>
-
-</div>
-
-<footer>
-<h3>Created by Ujjwal Sonawat</h3>
-</footer>
-
+<button>Learn DevOps</button>
 </div>
 
 </body>
